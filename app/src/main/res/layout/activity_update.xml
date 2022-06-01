@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".Update_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#e4f095"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:text="Cập nhật nhân viên"
+            android:textColor="#ed0c0c"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <EditText
+            android:id="@+id/ed_maNV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Nhập mã nhân viên"
+            android:textColorHint="@color/design_default_color_primary" />
+
+        <EditText
+            android:id="@+id/ed_tenNV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Nhập tên nhân viên"
+
+            android:textColorHint="@color/design_default_color_primary" />
+
+        <EditText
+            android:id="@+id/ed_NgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Nhập ngày sinh"
+
+            android:textColorHint="@color/design_default_color_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Chọn giới tính"
+            android:textColorHint="@color/design_default_color_primary"
+            android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                    android:id="@+id/rb_Nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_Nu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/ed_chucVu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Chọn chức vụ"
+            android:textColorHint="@color/design_default_color_primary"
+            android:textSize="18dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/rb_FED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Front-end Developer"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/rb_BED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back-end Developer"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/rb_T"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tester"
+                android:textSize="15dp" />
+
+            </RadioGroup>
+
+        <EditText
+            android:id="@+id/ed_soDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Nhập số điện thoại"
+            android:textColorHint="@color/design_default_color_primary" />
+
+        <EditText
+            android:id="@+id/ed_diaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Nhập địa chỉ"
+            android:textColorHint="@color/design_default_color_primary" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Nhập email"
+            android:textColorHint="@color/design_default_color_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+            android:id="@+id/btn_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cập Nhật"
+                android:layout_marginLeft="50dp"/>
+
+            <Button
+                android:id="@+id/btn_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:text="Quay Lại" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

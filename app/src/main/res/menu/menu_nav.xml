@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/list_nv"
+            android:title="Danh sách nhân viên" />
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/add_nv"
+            android:title="Thêm nhân viên" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/list_nv"
+            android:title="Tìm kiếm nhân viên" />
+    </group>
+    <item android:title="Tài khoản">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account"
+                android:title="Thông tin" />
+            <item
+                android:id="@+id/nav_editaccount"
+                android:icon="@drawable/ic_editacc"
+                android:title="Chỉnh sửa" />
+        </menu>
+    </item>
+</menu>
